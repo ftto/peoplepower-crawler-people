@@ -1,58 +1,30 @@
 {
-  "name": "npm-module-boilerplate-es6",
-  "version": "1.0.0",
-  "description": "Boilerplate for npm modules.",
-  "main": "./lib/index.js",
+  "name": "peoplepower-crawler-people",
+  "version": "0.1.0",
+  "description": "열려라국회 국회의원 조회 크롤러",
+  "main": "./index.js",
   "scripts": {
-    "clean": "rimraf lib",
-    "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-register --recursive",
-    "test:watch": "npm test -- --watch",
-    "test:examples": "node examples/",
-    "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
-    "lint": "eslint src test",
-    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib"
+    "test": "node test/index.js",
+    "start": "node index.js"
   },
-  "files": [
-    "lib",
-    "src"
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Travelport-Ukraine/npm-module-boilerplate.git"
+    "url": "git+https://github.com/ftto/peoplepower-crawler-peope.git"
   },
   "keywords": [
-    "boilerplate",
-    "npm",
     "module",
     "node",
     "javascript"
   ],
-  "author": "Mark mail.ormark@gmail.com",
+  "author": "Hoony Chang <the6thm0nth@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Travelport-Ukraine/npm-module-boilerplate/issues"
+    "url": "https://github.com/ftto/peoplepower-crawler-peope/issues"
   },
-  "homepage": "https://github.com/Travelport-Ukraine/npm-module-boilerplate#readme",
-  "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-cli": "^6.14.0",
-    "babel-eslint": "^7.0.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.14.0",
-    "babel-preset-stage-2": "^6.13.0",
-    "chai": "^3.5.0",
-    "cross-env": "^3.0.0",
-    "eslint": "^3.6.0",
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-import": "^2.0.0",
-    "eslint-plugin-jsx-a11y": "^2.2.2",
-    "eslint-plugin-react": "^6.3.0",
-    "istanbul": "^1.0.0-alpha",
-    "mocha": "^3.0.2",
-    "rimraf": "^2.5.4"
-  },
+  "homepage": "https://github.com/ftto/peoplepower-crawler-peope#readme",
   "dependencies": {
     "crawler": "^1.2.0",
+    "esm": "^3.0.77",
     "prettyjson": "^1.2.1"
   }
 }

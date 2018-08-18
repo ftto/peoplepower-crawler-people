@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   host: "http://watch.peoplepower21.org",
   listCrawler: {
     maxPage: 1,
