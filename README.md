@@ -12,6 +12,12 @@
 
 - `src/config.js` 파일에서 크롤러가 동작하는 성능/속도와 관련된 설정을 수정할 수 있다. 너무 빠르게 동작하도록 설정했다가는 열려라 국회 쪽 사이트에 접근이 막힐 수 있으니 적절한 값으로 동작하는 것이 좋다.
 
+## Test
+
+```bash
+node test/index.js
+```
+
 ## Developed By
 
 [FTTO](https://ftto.kr)
